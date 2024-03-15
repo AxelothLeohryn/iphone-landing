@@ -1,12 +1,18 @@
-import { useState } from 'react'
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Highlights from "./components/Highlights";
+import Model from "./components/Model";
 
 const App = () => {
-
   return (
-    <>
-      <h1 className='text-red-600'>Hello there</h1>
-    </>
-  )
-}
+    <main className="bg-black">
+      <Navbar />
+      <Hero />
+      <Highlights />
+      <Model />
+    </main>
+  );
+};
 
-export default App
+export default App;
