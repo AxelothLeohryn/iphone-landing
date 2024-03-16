@@ -77,12 +77,12 @@ const HowItWorks = () => {
             <p className="hiw-text g_fadeIn">
               A17 Pro is an entirely new class of iPhone chip that delivers our{" "}
               <span className="text-white">
-                best graphic performance by far
+                best graphic performance by far.
               </span>
-              .
+              
             </p>
 
-            <p className="hiw-text g_fadeIn">
+            <p className="hiw-text g_fadeIn mt-4">
               Mobile{" "}
               <span className="text-white">
                 games will look and feel so immersive
