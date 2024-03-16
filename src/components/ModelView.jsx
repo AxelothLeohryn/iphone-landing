@@ -24,7 +24,7 @@ const ModelView = ({
       {/* Ambient Light */}
       <ambientLight intensity={0.5} />
 
-      <PerspectiveCamera makeDefault position={[0, 0, 4]} />
+      <PerspectiveCamera makeDefault position={[4, -1, -4]} fov={2} />
 
       <Lights />
 
@@ -33,7 +33,6 @@ const ModelView = ({
         ref={controlRef}
         enableZoom={false}
         enablePan={false}
-        
         rotateSpeed={0.4}
         target={new THREE.Vector3(0, 0, 0)}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
@@ -41,7 +40,7 @@ const ModelView = ({
 
       <group ref={groupRef} name={`${index === 1 ? "small" : "large"}`}>
         <Suspense fallback={<Loader />}>
-          <IPhone scale={index === 1 ? [19, 19, 19] : [21, 21, 21]} 
+          <IPhone scale={index === 1 ? 1 : 1.2} 
           item={item}
           size={size}/>
         </Suspense>
