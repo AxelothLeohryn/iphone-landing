@@ -28,7 +28,7 @@ export const animateWithGsapTimeline = (
     duration: 1,
     ease: "power2.inOut",
   });
-
+  console.log(rotationState);
   timeline.to(
     firstTarget,
     {
