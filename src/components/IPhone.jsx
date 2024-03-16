@@ -256,7 +256,7 @@ function IPhone(props) {
     </group>
   );
 }
+useGLTF.preload("/models/scene.glb");
 
 export default IPhone;
 
-useGLTF.preload("/models/scene.glb");

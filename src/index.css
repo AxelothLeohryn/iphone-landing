@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  touch-action: auto !important;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 canvas {
-  
+  touch-action: none;
 }
 
 
