@@ -22,7 +22,7 @@ const ModelView = ({
       className={`w-full h-full absolute ${index === 2 ? "right-[-100%]" : ""}`}
     >
       {/* Ambient Light */}
-      <ambientLight intensity={0.3} />
+      <ambientLight intensity={0.5} />
 
       <PerspectiveCamera makeDefault position={[0, 0, 4]} />
 
@@ -40,7 +40,7 @@ const ModelView = ({
 
       <group ref={groupRef} name={`${index === 1 ? "small" : "large"}`}>
         <Suspense fallback={<Loader />}>
-          <IPhone scale={index === 1 ? [15, 15, 15] : [17, 17, 17]} 
+          <IPhone scale={index === 1 ? [19, 19, 19] : [21, 21, 21]} 
           item={item}
           size={size}/>
         </Suspense>

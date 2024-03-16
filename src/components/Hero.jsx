@@ -2,11 +2,13 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { heroVideo, smallHeroVideo } from "../utils";
 import { useEffect, useState } from "react";
+import { debounce } from "lodash";
 
 const Hero = () => {
   const [videoSrc, setVideoSrc] = useState(
     window.innerWidth < 760 ? smallHeroVideo : heroVideo
   );
+
 
   const handleVideoSrcSet = () => {
     if (window.innerWidth < 760) {
@@ -16,12 +18,14 @@ const Hero = () => {
     }
   };
 
+  const debouncedHandleVideoSrcSet = debounce(handleVideoSrcSet, 200);
+
   useEffect(() => {
-    window.addEventListener("resize", handleVideoSrcSet);
+    window.addEventListener("resize", debouncedHandleVideoSrcSet);
 
     //Important to remove the event listener when the component is unmounted
     return () => {
-      window.removeEventListener("resize", handleVideoSrcSet);
+      window.removeEventListener("resize", debouncedHandleVideoSrcSet);
     };
   }, []);
 
