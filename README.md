@@ -22,19 +22,19 @@
 
 ### Hero Section
 
- <img src='./src/docs/readme-images/banner.gif'>
+ <img src='./src/docs/readme-images/banner.webp'>
 
 ### Higlights, Video Carousel
 
-<img src='./src/docs/readme-images/highlights.gif'>
+<img src='./src/docs/readme-images/highlights.webp'>
 
 ### 3D Model, Color and Size Selector
 
-<img src='./src/docs/readme-images/3d.gif'>
+<img src='./src/docs/readme-images/3d.webp'>
 
 ## Fluid Animations
 
-<img src='./src/docs/readme-images/animations.gif'>
+<img src='./src/docs/readme-images/animations.webp'>
 
 
 ## 🛠️Built With
