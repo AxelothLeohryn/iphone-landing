@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  touch-action: auto !important;
+  touch-action: pan-y !important;
 }
 
 body {
