@@ -11,7 +11,7 @@ const HowItWorks = () => {
     gsap.from("#chip", {
       scrollTrigger: {
         trigger: "#chip",
-        start: "top bottom",
+        start: "20% bottom",
       },
       opacity: 0,
       scale: 2,
@@ -19,34 +19,17 @@ const HowItWorks = () => {
       ease: "power2.inOut",
     });
 
-    animateWithGsap(
-      "#video-game",
-      {
-        scrollTrigger: {
-          trigger: "#video-game",
-          start: "top bottom",
-        },
-        opacity: 1,
-        x:0,
-        y: 0,
-        rotation:0,
-        scale: 1,
-        duration: 1,
-        ease: "ease",
-      },
-    );
+    animateWithGsap(".g_fadeIn", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power2.inOut",
+    });
   }, []);
-
-  animateWithGsap(".g_fadeIn", {
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    ease: "power2.inOut",
-  });
 
   return (
     <section className="common-padding">
-      <div className="screen-max-width overflow-hidden">
+      <div className="screen-max-width">
         <div id="chip" className="flex-center w-full my-20">
           <img src={chipImg} alt="chip" width={180} height={180} />
         </div>
@@ -63,7 +46,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="mt-10 md:mt-20 mb-14">
-          <div id="video-game" className="relative h-full flex-center opacity-0 z-20">
+          <div className="relative h-full flex-center">
             <div className="overflow-hidden">
               <img
                 src={frameImg}
@@ -78,7 +61,6 @@ const HowItWorks = () => {
                 preload="none"
                 muted
                 autoPlay
-                loop
                 ref={videoRef}
               >
                 <source src={frameVideo} type="video/mp4" />
