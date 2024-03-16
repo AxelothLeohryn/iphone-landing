@@ -32,6 +32,8 @@ const Hero = () => {
   useGSAP(() => {
     gsap.to("#hero-video", {
         opacity: 1,
+        duration:1.5,
+        ease: "power2.inOut",
       });
 
     gsap.to("#hero", {
@@ -54,7 +56,7 @@ const Hero = () => {
         </p>
         <div id="hero-video" className="md:w-10/12 w-9/12 opacity-0">
           <video
-            className="pointer-events-none"
+            className="pointer-events-none md:w-[70%] mx-auto"
             autoPlay
             muted
             playsInline={true}
@@ -71,7 +73,7 @@ const Hero = () => {
         <a href="#highlights" className="btn">
           Buy
         </a>
-        <p className="font-normal text-xl">From $199/month or $999</p>
+        <p className="font-normal text-xl">From $199/month or $9999</p>
       </div>
     </section>
   );

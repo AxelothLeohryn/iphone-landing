@@ -19,6 +19,21 @@ const HowItWorks = () => {
       ease: "power2.inOut",
     });
 
+    gsap.from("#video-game", {
+        scrollTrigger: {
+          trigger: "#video-game",
+          start: "25% bottom",
+          end: "30% top",
+          scrub: 1,
+        },
+        opacity: 1,
+        z: -300,
+        y:-300,
+        scale: 1.5,
+        duration: 2,
+        ease: "expo.out",
+      });
+
     animateWithGsap(".g_fadeIn", {
       opacity: 1,
       y: 0,
@@ -46,7 +61,7 @@ const HowItWorks = () => {
         </div>
 
         <div className="mt-10 md:mt-20 mb-14">
-          <div className="relative h-full flex-center">
+          <div id="video-game" className="relative h-full flex-center bg-black">
             <div className="overflow-hidden">
               <img
                 src={frameImg}
@@ -61,6 +76,7 @@ const HowItWorks = () => {
                 preload="none"
                 muted
                 autoPlay
+                loop
                 ref={videoRef}
               >
                 <source src={frameVideo} type="video/mp4" />
