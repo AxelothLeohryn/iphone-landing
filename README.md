@@ -14,9 +14,9 @@
 
 - **📱Responsive Design**: Adaptable interface for a consistent experience across different devices.
 
-- **GSAP Animations**: Smooth and engaging animations that mimic the original iPhone 15 landing page.
+- **💫GSAP Animations**: Smooth and engaging animations that mimic the original iPhone 15 landing page. 
 
-- **Three.js**: 3D model of the iPhone 15 Pro, color and size selector.
+- **🌐Three.js**: 3D model of the iPhone 15 Pro, color and size selector.
 
 ## Web Preview
 
