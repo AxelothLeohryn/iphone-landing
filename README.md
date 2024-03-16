@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://alejandrosanserg-iphone-landing.netlify.app/" target="_blank">
-      <img src="./src/docs/readme-images/banner.png" alt="Project Banner">
+      <img src="./src/docs/readme-images/banner2.png" alt="Project Banner">
     </a>
   <br />
   </div>
@@ -25,6 +25,8 @@
  <img src='./src/docs/readme-images/banner.webp'>
 
 ### Higlights, Video Carousel
+
+- Video Carousel with progress slider, auto-slide, play/pause and rewind buttons.
 
 <img src='./src/docs/readme-images/highlights.webp'>
 
