@@ -19,8 +19,9 @@ body {
 }
 
 canvas {
-  touch-action: none;
+  touch-action: auto !important;
 }
+
 
 .screen-max-width {
   margin-inline-start: auto;
